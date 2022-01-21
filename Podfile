@@ -7,5 +7,7 @@ target 'UnsplashTestAssignment' do
 
   # Pods for UnsplashTestAssignment
   pod 'Alamofire', '~> 5.5'
+  pod 'Kingfisher', '~> 7.0'
+  pod 'R.swift'
 
 end
