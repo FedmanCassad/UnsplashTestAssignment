@@ -144,7 +144,9 @@ extension RandomPhotosViewController: UISearchTextFieldDelegate {
 extension RandomPhotosViewController {
     @objc func searchQueryChanged(sender: UITextField) {
         guard let text = sender.text else { return }
-        viewModel.searchPhotos(withKeyword: text)
+        !text.isEmpty
+        ? viewModel.searchPhotos(withKeyword: text)
+        : viewModel.getRandomPhotos()
     }
 }
 
